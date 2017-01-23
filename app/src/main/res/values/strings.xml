@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">DispositivosMoviles</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_settings">Settings</string>
+
+    <!--ch01-01-->
+    <string name="label_theme">Custom Theme</string>
+    <string name="label_style">Styled Widgets</string>
+
+    <string name="hello">Hello World, MyActivity!</string>
+
+    <string name="label_rest">Basic REST</string>
+    <string name="label_auth">Authenticated REST</string>
+
+    <string name="label_feed">XmlPull Feed</string>
+    <string name="label_local">XmlPull Resource</string>
+</resources>

@@ -1,0 +1,482 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.darwindeveloper.dispositivosmoviles">
+
+
+    <!--ch03-->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <!-- Required in 4.4+ to read SMS provider -->
+    <uses-permission android:name="android.permission.READ_SMS" />
+
+
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+
+
+    <!--ch04-->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+
+    <uses-permission android:name="com.google.android.gms.permission.ACTIVITY_RECOGNITION" />
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
+        <!--ch01-01-->
+        <activity
+            android:name="ch01.example01_styles_themes.ThemedActivity"
+            android:label="@string/label_theme"
+            android:theme="@style/AppTheme"/>
+        <activity
+            android:name="ch01.example01_styles_themes.StylesActivity"
+            android:label="@string/label_style"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar"/>
+        <!--end ch01-01-->
+
+        <!--ch01-02-->
+        <activity
+            android:name="ch01.example02_systemui.MainActivity"
+            android:theme="@style/Theme.AppCompat" />
+        <activity
+            android:name="ch01.example02_systemui.DarkActivity"
+            android:theme="@style/Theme.AppCompat" />
+        <activity
+            android:name="ch01.example02_systemui.FullActivity"
+            android:theme="@style/Theme.AppCompat" />
+        <activity
+            android:name="ch01.example02_systemui.HideActivity"
+            android:theme="@style/Theme.AppCompat" />
+        <activity
+            android:name="ch01.example02_systemui.ImmersiveActivity"
+            android:theme="@style/Theme.AppCompat" />
+        <activity
+            android:name="ch01.example02_systemui.ImmersiveStickyActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <!--end ch01-02-->
+
+
+        <!--ch01-03-->
+        <activity
+            android:name="ch01.example03_customwidgets.MyActivity"
+            android:label="customwidgets"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <!--end ch01-03-->
+
+        <!--ch01-04-->
+        <activity
+            android:name="ch01.example04_animateproperty.FlipperActivity"
+            android:label="Flipper"
+            android:theme="@style/AppTheme">
+
+        </activity>
+        <activity
+            android:name="ch01.example04_animateproperty.FlipperPauseActivity"
+            android:label="FlipperPause"
+            android:theme="@style/AppTheme"/>
+
+        <activity
+            android:name="ch01.example04_animateviewproperty.AnimateActivity"
+            android:label="AnimateActivity"
+            android:theme="@style/AppTheme"/>
+
+        <activity
+            android:name="ch01.example04_animationxml.FlipperActivity"
+            android:label="Animation xml"
+            android:theme="@style/AppTheme"/>
+
+        <!--end ch01-04-->
+
+
+        <!--ch01-05-->
+        <activity
+            android:name="ch01.example05_animatelayout.MainActivity"
+            android:label="Animation Layout"
+            android:theme="@style/AppTheme"></activity>
+        <!--end ch01-05-->
+
+        <!--ch01-06-->
+        <activity
+            android:name="ch01.example06_universalapp.UniversalActivity"
+            android:label="Universal App"
+            android:theme="@style/AppTheme"></activity>
+        <!--end ch01-06-->
+
+        <!--ch01-07-->
+        <activity
+            android:name="ch01.example07_adapterviewempty.EmptyActivity"
+            android:label="Adapter View Empty"
+            android:theme="@style/AppTheme"></activity>
+        <!--end ch01-07-->
+
+        <!--ch01-08-->
+        <activity
+            android:name="ch01.example08_custom_list.MyActivity"
+            android:label="Custom List"
+            android:theme="@style/AppTheme"></activity>
+        <!--end ch01-08-->
+
+        <!--ch01-09-->
+        <activity
+            android:name="ch01.example09_section_headers.SectionsActivity"
+            android:label="Section Headers"
+            android:theme="@style/AppTheme"></activity>
+        <!--end ch01-09-->
+
+
+        <!--ch01-10-->
+        <activity
+            android:name="ch01.example10_compound_controls.MyActivity"
+            android:label="Compound Controls"
+            android:theme="@style/AppTheme"></activity>
+        <!--end ch01-10-->
+
+
+        <!--ch01-11-->
+        <activity
+            android:name="ch01.example11_transition_animations.MainActivity"
+            android:label="Activity Transitions"
+            android:theme="@style/AppTheme"></activity>
+
+        <activity
+            android:name="ch01.example11_transition_animations.SupportActivity"
+            android:label="Support Fragment Transitions"
+            android:theme="@style/AppTheme"></activity>
+
+        <activity
+            android:name="ch01.example11_transition_animations.NativeActivity"
+            android:label="Native Fragment Transitions"
+            android:theme="@style/AppTheme"></activity>
+        <!--end ch01-11-->
+
+
+        <!--ch01-12-->
+        <activity
+            android:name="ch01.example12_static_transforms.MainActivity"
+            android:label="Static Transforms"
+            android:theme="@style/AppTheme"></activity>
+
+        <activity
+            android:name="ch01.example12_static_transforms.ScrollActivity"
+            android:label="Static Transforms Scroll"
+            android:theme="@style/AppTheme"></activity>
+        <!--end ch01-12-->
+
+
+        <!--ch01-13-->
+        <activity
+            android:name="ch01.example13_recyclerview.SimpleRecyclerActivity"
+            android:label="recyclerView"
+            android:theme="@style/AppTheme"></activity>
+
+        <!--end ch01-13-->
+
+
+        <!--capitulo 2-->
+        <activity
+            android:name="ch02.ejercicio_3_4.LockActivity"
+            android:label="toogle Button"
+            android:theme="@style/AppTheme"></activity>
+
+        <activity
+            android:name="ch02.ejercicio_3_4.ManualRotationActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="Check Button"
+            android:theme="@style/AppTheme"></activity>
+
+
+        <!--ch02_5-->
+        <activity
+            android:name="ch02.ejercicio_5.ActionActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="Context menu"
+            android:theme="@style/AppTheme"></activity>
+
+        <!--ch02_6-->
+        <activity
+            android:name="ch02.ejercicio_6.DialogActivity"
+            android:label="Dialog Acivity"
+            android:theme="@style/AppTheme"></activity>
+        <activity
+            android:name="ch02.ejercicio_6.CustomItemActivity"
+            android:label="Custom Dialog"
+            android:theme="@style/AppTheme"></activity>
+
+        <!--ch02_7-->
+        <activity
+            android:name="ch02.ejercicio_7.OptionsActivity"
+            android:label="Option Menu"
+            android:theme="@style/AppTheme"></activity>
+
+
+        <!--ch02_8-->
+        <activity
+            android:name="ch02.ejercicio_8.MyActivity"
+            android:label="Custom Back"
+            android:theme="@style/AppTheme"></activity>
+
+        <!--ch02_10-->
+        <activity
+            android:name="ch02.ejercicio_10.MyActivity"
+            android:label="Custom Back"
+            android:theme="@style/AppTheme"></activity>
+
+        <!--ch02_11-->
+        <activity
+            android:name="ch02.ejercicio_11.MainActivity"
+            android:label="Custom IME"
+            android:theme="@style/AppTheme"></activity>
+
+
+        <activity
+            android:name="ch02.ejercicio_13_14.DelegateActivity"
+            android:label="DelegateActivity"
+            android:theme="@style/AppTheme"></activity>
+
+
+        <activity
+            android:name="ch02.ejercicio_13_14.ImageActivity"
+            android:label="ImageActivity"
+            android:theme="@style/AppTheme"></activity>
+
+        <activity
+            android:name="ch02.ejercicio_13_14.PanScrollActivity"
+            android:label="PanScrollActivity"
+            android:theme="@style/AppTheme"></activity>
+
+        <activity
+            android:name="ch02.ejercicio_13_14.RemoteScrollActivity"
+            android:label="RemoteScrollActivity"
+            android:theme="@style/AppTheme"></activity>
+
+
+        <!--capitulo 4-->
+        <activity
+            android:name="ch03.ejercicio_1_2_webview.MyActivity"
+            android:label="webview.MyActivity"
+            android:theme="@style/AppTheme" />
+
+        <activity
+            android:name="ch03.ejercicio_1_2_webview.MyLocalActivity"
+            android:label="webview.MyLocalActivity"
+            android:theme="@style/AppTheme" />
+
+
+        <activity
+            android:name="ch03.ejercicio_3_javascript.MyActivity"
+            android:label="javascript"
+            android:theme="@style/AppTheme" />
+
+
+        <activity
+            android:name="ch03.ejercicio_5_dm_sample.DownloadActivity"
+            android:label="DownloadActivity"
+            android:theme="@style/AppTheme" />
+
+        <activity
+            android:name="ch03.ejercicio_6_rest.SearchActivity"
+            android:label="SearchActivity"
+            android:theme="@style/AppTheme" />
+
+
+        <activity
+            android:name="ch03.ejercicio_6_rest.AuthActivity"
+            android:label="AuthActivity"
+            android:theme="@style/AppTheme" />
+
+
+        <activity
+            android:name="ch03.ejercicio_7_json.MyActivity"
+            android:label="Json"
+            android:theme="@style/AppTheme" />
+
+
+        <activity
+            android:name="ch03.ejercicio_8_xmlpull.PullFeedActivity"
+            android:label="PullFeedActivity"
+            android:theme="@style/AppTheme" />
+
+        <activity
+            android:name="ch03.ejercicio_8_xmlpull.PullParserActivity"
+            android:label="PullParserActivity"
+            android:theme="@style/AppTheme" />
+
+
+        <activity
+            android:name="ch03.ejercicio_8_xmlsax.FeedActivity"
+            android:label="FeedActivity"
+            android:theme="@style/AppTheme" />
+
+
+        <activity
+            android:name="ch03.ejercicio_9_10_sms.SmsActivity"
+            android:label="SmsActivity"
+            android:theme="@style/AppTheme" />
+
+
+        <activity
+            android:name="ch03.ejercicio_11_bluetoothp2p.ExchangeActivity"
+            android:label="bluetoothp2p.ExchangeActivity"
+            android:theme="@style/AppTheme" />
+
+
+        <activity
+            android:name="ch03.ejercicio_14_usb_host.USBActivity"
+            android:label="USBActivity"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED"
+                android:resource="@xml/device_filter" />
+        </activity>
+
+
+        <activity
+            android:name="ch03.ejercicio_12_reachability.Reachability"
+            android:label="Reachability"
+            android:theme="@style/AppTheme" />
+
+
+        <activity
+            android:name="ch04.ejercicio_1_my_location.MainActivity"
+            android:label="my_location"
+            android:theme="@style/AppTheme" />
+
+
+        <activity
+            android:name="ch04.ejercicio_2_3_mapper.BasicMapActivity"
+            android:label="Basic Map">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="ch04.ejercicio_2_3_mapper.ShapeMapActivity"
+            android:label="Shape Map">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="ch04.ejercicio_2_3_mapper.MarkerMapActivity"
+            android:label="Marker Map" />
+
+        <activity
+            android:name="ch04.ejercicio_4_regionmonitor.MainActivity"
+            android:label="region Monitor" />
+        <activity
+            android:name="ch04.ejercicio_5_image_capture.MyActivity"
+            android:label="Image capture" />
+
+
+        <activity
+            android:name="ch04.ejercicio_6_camera_overlay.pic.PreviewActivity"
+            android:label="Camera overlay" />
+
+
+        <activity
+            android:name="ch04.ejercicio_7_audioin.RecognizeActivity"
+            android:label="RecognizeActivity" />
+
+
+
+        <activity
+            android:name="ch04.ejercicio_8_video_capture.MyActivity"
+            android:label="Video capture" />
+
+
+        <activity
+            android:name="ch04.ejercicio_8_video_overlay.VideoCaptureActivity"
+            android:label="Video overlay" />
+
+        <activity
+            android:name="ch04.ejercicio_9_SpeechRecognizer.RecognizeActivity"
+            android:label="SpeechRecognizer" />
+
+
+        <activity
+            android:name="ch04.ejercicio_10_playback.PlayerActivity"
+            android:label="PlayerActivity" />
+
+
+        <activity
+            android:name="ch04.ejercicio_10_playback.VideoActivity"
+            android:label="VideoActivity" />
+
+
+        <activity
+            android:name="ch04.ejercicio_11_soundpool.SoundPoolActivity"
+            android:label="soundpool" />
+
+
+        <activity
+            android:name="ch04.ejercicio_12_tilt_sensor.TiltActivity"
+            android:label="tilt_sensor" />
+
+
+        <activity
+            android:name="ch04.ejercicio_13_compas_monitor.CompassActivity"
+            android:label="compas_monitor" />
+
+
+        <activity
+            android:name="ch04.ejercicio_14_metadata_retriever.MetadataActivity"
+            android:label="metadata_retriever" />
+
+        <activity
+            android:name="ch04.ejercicio_15_usermotion_activity.MainActivity"
+            android:label="usermotion_activity" />
+
+
+
+        <!-- Required Metadata Elements for Maps -->
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyAIN_ps9lK8CIjH_ec-_tkFMF4_9PGUH-0" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <service android:name="ch04.ejercicio_4_regionmonitor.RegionMonitorService" />
+        <service android:name="ch04.ejercicio_15_usermotion_activity.UserMotionService" />
+
+    </application>
+
+</manifest>

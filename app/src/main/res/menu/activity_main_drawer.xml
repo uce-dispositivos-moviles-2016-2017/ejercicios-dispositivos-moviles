@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_cap1"
+            android:icon="@mipmap/ic_launcher"
+            android:title="Ejercicios Capitulo 1" />
+
+        <item
+            android:id="@+id/nav_cap2"
+            android:icon="@mipmap/ic_launcher"
+            android:title="Ejercicios Capitulo 2" />
+
+        <item
+            android:id="@+id/nav_cap3"
+            android:icon="@mipmap/ic_launcher"
+            android:title="Ejercicios Capitulo 3" />
+
+        <item
+            android:id="@+id/nav_cap4"
+            android:icon="@mipmap/ic_launcher"
+            android:title="Ejercicios Capitulo 4" />
+
+        <item
+            android:id="@+id/nav_cap5"
+            android:icon="@mipmap/ic_launcher"
+            android:title="Ejercicios Capitulo 5" />
+
+
+        <item
+            android:id="@+id/nav_cap6"
+            android:icon="@mipmap/ic_launcher"
+            android:title="Ejercicios Capitulo 6" />
+
+
+
+
+    </group>
+
+
+
+</menu>
